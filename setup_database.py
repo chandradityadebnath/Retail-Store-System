@@ -2,7 +2,7 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 
-# Load variables from your hidden .env file
+
 load_dotenv()
 
 try:
