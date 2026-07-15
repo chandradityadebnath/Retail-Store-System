@@ -1,12 +1,16 @@
-import mysql.connector as mysql
+import mysql.connector
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 try:
-    # Connect to your local MySQL Server
-    
-    connection = mysql.connect(
-        host="localhost",
-        user="root",
-        password="Jeet"
+    # Connect securely using environment variables
+    connection = mysql.connector.connect(
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD")
     )
 
     if connection.is_connected():
@@ -14,8 +18,8 @@ try:
         cursor.execute("SELECT version();")
         db_version = cursor.fetchone()
         
-        print("🎉 SUCCESS! Python is connected to MySQL.")
-        print(f"MySQL Server Version: {db_version[0]}")
+        print("🎉 SUCCESS! Python is connected to MySQL securely.")
+        print(f"MySQL Server Version: {db_version}")
         
         # Clean up and close connection
         cursor.close()
