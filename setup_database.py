@@ -1,11 +1,16 @@
 import mysql.connector
+import os
+from dotenv import load_dotenv
+
+# Load variables from your hidden .env file
+load_dotenv()
 
 try:
-    # 1. Connect to MySQL Server
+    # 1. Connect to MySQL Server securely using environment variables
     db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Jeet"
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD")  
     )
     cursor = db.cursor()
 
