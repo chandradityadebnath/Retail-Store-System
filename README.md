@@ -4,7 +4,7 @@ Hi! I built this project right before starting my B.Tech CSE degree. My goal was
 
 Instead of writing simple terminal text scripts, I wanted to see how a professional system connects a visual interface, a live database, and automated document generation.
 
-## 🌟 What This App Does
+## Things the App does:
 
 *   **Owner Inventory Tab:** A backend panel where store owners can visually see stock levels, add new products, adjust prices, or remove old items directly into a MySQL database.
 *   **Cashier Billing Tab:** A point-of-sale customer screen where you enter a Product ID and quantity. The system automatically verifies if there is enough stock in MySQL, calculates running totals, and adds items to a shopping cart grid.
@@ -13,7 +13,7 @@ Instead of writing simple terminal text scripts, I wanted to see how a professio
 
 ---
 
-## 🛠️ Skills I Practiced & Applied
+##  Skills I Practiced & Applied:
 
 *   **Python (GUI Layouts):** Used `Tkinter` and `ttk` to handle the grid layouts, tabs, pop-up warning messages, and data tables.
 *   **Relational Databases (MySQL):** Designed a three-table relational system with foreign keys to link products to dynamic invoice rows.
@@ -21,7 +21,7 @@ Instead of writing simple terminal text scripts, I wanted to see how a professio
 
 ---
 
-## 📋 Database Structure
+## Database Structure:
 
 This is how my MySQL tables are structured and linked together:
 
@@ -58,7 +58,7 @@ CREATE TABLE InvoiceItems (
 
 ---
 
-## 🚀 How to Run It Locally
+##  How to Run It Locally :
 
 ### 1. Set Up Environment Variables
 Create a file named `.env` in the project folder and insert your local database connection details:
@@ -69,7 +69,7 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=RetailStore
 ```
 
-### 2. Run the Scripts
+### 2. Run the Scripts :
 Open your terminal inside the folder and execute:
 ```bash
 # 1. Install required helper libraries
