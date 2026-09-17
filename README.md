@@ -44,7 +44,7 @@ CREATE TABLE Invoices (
     total_amount DECIMAL(10, 2) NOT NULL
 );
 
--- 3. Junction table linking products bought to specific invoices
+-- 3. This includes junction table linking products bought to specific invoices
 CREATE TABLE InvoiceItems (
     item_id INT AUTO_INCREMENT PRIMARY KEY,
     invoice_id INT,
@@ -61,6 +61,7 @@ CREATE TABLE InvoiceItems (
 ##  How to Run It Locally :
 
 ### 1. Set Up Environment Variables
+
 Create a file named `.env` in the project folder and insert your local database connection details:
 ```env
 DB_HOST=localhost
