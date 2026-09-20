@@ -1,5 +1,11 @@
 # 🏬 Retail Store Billing & Inventory System
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-lightgrey)
+![ReportLab](https://img.shields.io/badge/PDF-ReportLab-red)
+
+
 Hi! I built this project right before starting my B.Tech CSE degree. My goal was to take the basic Python and MySQL foundations I learned in school and scale them up into a complete, usable desktop app that a real shopkeeper could use.
 
 Instead of writing simple terminal text scripts, I wanted to see how a professional system connects a visual interface, a live database, and automated document generation.
