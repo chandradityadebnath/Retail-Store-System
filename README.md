@@ -89,4 +89,19 @@ py setup_database.py
 py dashboard.py
 ```
 ---
+
+##  Future Improvements & Roadmap :
+
+To evolve this application from a local database tool into a modern, intelligent point-of-sale ecosystem, the following enhancements are planned:
+
+### AI & Intelligent Features
+- **Smart Inventory Insights & Forecasting:** Integrate machine learning models (e.g., Prophet or Scikit-learn) to analyze historical sales data, predict demand spikes, and recommend optimal reorder times.
+- **Automated Receipt Scanning (OCR):** Implement an AI-powered document scanner (using OpenCV + Tesseract / LLM Vision APIs) to quickly parse physical supplier invoices and auto-populate inventory stock.
+- **Conversational POS Assistant:** Add a natural language query interface allowing store owners to ask natural questions like *"What were my top 3 best-selling products this week?"* or *"Show items running low on stock."*
+
+###  Architecture & User Experience
+- **Role-Based Access Control (RBAC):** Separate administrative access (inventory edits, pricing, analytics) from cashier privileges (billing and cart management).
+- **Hardware Integration:** Support barcode and QR code scanners for faster item lookup at checkout.
+- **Enhanced Data Visualization:** Add a graphical dashboard (using Matplotlib / Plotly) for sales reports and revenue tracking directly within the GUI.
+  
 *Built by **Chandraditya Debnath** as a self-taught project before joining college.*
